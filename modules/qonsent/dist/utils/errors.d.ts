@@ -1,0 +1,57 @@
+export declare enum ErrorCodes {
+    INVALID_TOKEN = "INVALID_TOKEN",
+    TOKEN_EXPIRED = "TOKEN_EXPIRED",
+    INSUFFICIENT_PERMISSIONS = "INSUFFICIENT_PERMISSIONS",
+    IDENTITY_NOT_FOUND = "IDENTITY_NOT_FOUND",
+    PERMISSION_CHECK_FAILED = "PERMISSION_CHECK_FAILED",
+    PERMISSION_GRANT_FAILED = "PERMISSION_GRANT_FAILED",
+    PERMISSION_REVOKE_FAILED = "PERMISSION_REVOKE_FAILED",
+    PERMISSION_LIST_FAILED = "PERMISSION_LIST_FAILED",
+    INVALID_PERMISSIONS = "INVALID_PERMISSIONS",
+    GRANT_NOT_FOUND = "GRANT_NOT_FOUND",
+    POLICY_CREATION_FAILED = "POLICY_CREATION_FAILED",
+    POLICY_UPDATE_FAILED = "POLICY_UPDATE_FAILED",
+    POLICY_DELETE_FAILED = "POLICY_DELETE_FAILED",
+    POLICY_NOT_FOUND = "POLICY_NOT_FOUND",
+    POLICY_EVALUATION_FAILED = "POLICY_EVALUATION_FAILED",
+    INVALID_POLICY_FORMAT = "INVALID_POLICY_FORMAT",
+    VALIDATION_ERROR = "VALIDATION_ERROR",
+    INVALID_RESOURCE_FORMAT = "INVALID_RESOURCE_FORMAT",
+    INVALID_IDENTITY_FORMAT = "INVALID_IDENTITY_FORMAT",
+    INVALID_ACTION = "INVALID_ACTION",
+    SQUID_SERVICE_ERROR = "SQUID_SERVICE_ERROR",
+    QERBEROS_SERVICE_ERROR = "QERBEROS_SERVICE_ERROR",
+    QLOCK_SERVICE_ERROR = "QLOCK_SERVICE_ERROR",
+    QINDEX_SERVICE_ERROR = "QINDEX_SERVICE_ERROR",
+    DATABASE_ERROR = "DATABASE_ERROR",
+    DATABASE_CONNECTION_ERROR = "DATABASE_CONNECTION_ERROR",
+    CACHE_ERROR = "CACHE_ERROR",
+    CACHE_CONNECTION_ERROR = "CACHE_CONNECTION_ERROR",
+    EVENT_PUBLISH_FAILED = "EVENT_PUBLISH_FAILED",
+    EVENT_BUS_CONNECTION_ERROR = "EVENT_BUS_CONNECTION_ERROR",
+    RATE_LIMIT_EXCEEDED = "RATE_LIMIT_EXCEEDED",
+    INTERNAL_SERVER_ERROR = "INTERNAL_SERVER_ERROR",
+    SERVICE_UNAVAILABLE = "SERVICE_UNAVAILABLE",
+    TIMEOUT_ERROR = "TIMEOUT_ERROR",
+    CONFIGURATION_ERROR = "CONFIGURATION_ERROR"
+}
+export declare class QonsentError extends Error {
+    readonly code: ErrorCodes;
+    readonly details?: Record<string, any>;
+    readonly retryable: boolean;
+    readonly statusCode: number;
+    constructor(code: ErrorCodes, message: string, details?: Record<string, any>, retryable?: boolean);
+    private getStatusCode;
+    toJSON(): {
+        status: string;
+        code: ErrorCodes;
+        message: string;
+        details: Record<string, any> | undefined;
+        retryable: boolean;
+        timestamp: string;
+    };
+    static fromError(error: Error, code?: ErrorCodes): QonsentError;
+}
+export declare function isRetryableError(error: Error): boolean;
+export declare function getErrorSuggestedActions(code: ErrorCodes): string[];
+//# sourceMappingURL=errors.d.ts.map

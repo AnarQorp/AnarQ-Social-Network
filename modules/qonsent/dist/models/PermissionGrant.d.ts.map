@@ -1,0 +1,1 @@
+{"version":3,"file":"PermissionGrant.d.ts","sourceRoot":"","sources":["../../src/models/PermissionGrant.ts"],"names":[],"mappings":"AAAA,OAAO,EAAiB,QAAQ,EAAE,MAAM,UAAU,CAAC;AACnD,OAAO,EAAE,eAAe,EAAE,MAAM,UAAU,CAAC;AAE3C,MAAM,WAAW,wBAAyB,SAAQ,IAAI,CAAC,eAAe,EAAE,KAAK,CAAC,EAAE,QAAQ;CAAG;AAgH3F,eAAO,MAAM,oBAAoB;;;;OAA4E,CAAC"}

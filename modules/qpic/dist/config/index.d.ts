@@ -1,0 +1,32 @@
+export declare const config: {
+    port: number;
+    nodeEnv: "development" | "production" | "test";
+    mongoUri: string;
+    redisUrl: string;
+    ipfsUrl: string;
+    storagePath: string;
+    maxFileSize: number;
+    allowedFormats: string;
+    squidUrl: string;
+    qonsentUrl: string;
+    qmaskUrl: string;
+    qerberosUrl: string;
+    qindexUrl: string;
+    qmarketUrl: string;
+    ffmpegPath: string;
+    imagemagickPath: string;
+    transcodingWorkers: number;
+    transcodingTimeout: number;
+    cdnEnabled: boolean;
+    cacheTtl: number;
+    jwtSecret: string;
+    encryptionKey: string;
+    rateLimitMax: number;
+    rateLimitWindow: number;
+    cdnUrl?: string | undefined;
+};
+export declare const allowedFormatsArray: string[];
+export declare const isProduction: boolean;
+export declare const isDevelopment: boolean;
+export declare const isTest: boolean;
+//# sourceMappingURL=index.d.ts.map

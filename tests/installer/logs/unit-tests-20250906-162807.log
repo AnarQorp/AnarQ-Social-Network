@@ -1,0 +1,18 @@
+[2025-09-06 16:28:07] [INFO] Test log: /home/baituman/AnarQmVP/anar-q-nexus-core-main/tests/installer/logs/unit-tests-20250906-162807.log
+[2025-09-06 16:28:07] [INFO] Temp directory: /tmp/tmp.0LgosafFWb
+[2025-09-06 16:28:07] [INFO] Starting test: Test 1: log_error Function
+[2025-09-06 16:28:07] [PASS] log_error creates log file and writes error message
+[2025-09-06 16:28:07] [PASS] log_error includes context information
+[2025-09-06 16:28:07] [INFO] Starting test: Test 2: retry_with_backoff Function
+[2025-09-06 16:28:07] [PASS] retry_with_backoff succeeds with successful command
+[2025-09-06 16:28:08] [PASS] retry_with_backoff fails appropriately after max attempts
+[2025-09-06 16:28:08] [INFO] Starting test: Test 3: move_extracted_content Function
+[2025-09-06 16:28:08] [PASS] move_extracted_content executes successfully
+[2025-09-06 16:28:08] [PASS] move_extracted_content moves files correctly
+[2025-09-06 16:28:08] [INFO] Starting test: Test 4: cleanup_and_exit Function
+[2025-09-06 16:28:08] [PASS] cleanup_and_exit returns correct exit code
+[2025-09-06 16:28:08] [PASS] cleanup_and_exit removes temporary files
+[2025-09-06 16:28:08] [INFO] Starting test: Test 5: command_exists Function (Mocked)
+[2025-09-06 16:28:08] [PASS] command_exists returns true for existing command
+[2025-09-06 16:28:08] [PASS] command_exists returns false for missing command
+[2025-09-06 16:28:08] [PASS] 🎉 All unit tests passed!

@@ -1,0 +1,106 @@
+[2025-09-06 16:28:07] [INFO] Test suite log: /home/baituman/AnarQmVP/anar-q-nexus-core-main/tests/installer/logs/test-suite-20250906-162807.log
+[2025-09-06 16:28:07] [INFO] Project root: /home/baituman/AnarQmVP/anar-q-nexus-core-main
+[2025-09-06 16:28:07] [INFO] Checking test prerequisites...
+[2025-09-06 16:28:07] [PASS] All prerequisites satisfied
+[2025-09-06 16:28:07] [INFO] Starting test suite execution...
+[2025-09-06 16:28:07] [INFO] Starting suite: Running Unit Tests: Testing individual installer functions
+[0;35m
+╔═══════════════════════════════════════════════════════════════╗
+║                                                               ║
+║            AnarQ&Q Installer Unit Tests v1.0                 ║
+║                                                               ║
+║              Testing Individual Functions                     ║
+║                                                               ║
+╚═══════════════════════════════════════════════════════════════╝
+[0m
+[0;34mℹ️  Test log: /home/baituman/AnarQmVP/anar-q-nexus-core-main/tests/installer/logs/unit-tests-20250906-162807.log[0m
+[0;34mℹ️  Temp directory: /tmp/tmp.0LgosafFWb[0m
+
+[0;35mTest 1: log_error Function[0m
+ERROR: Test error message
+[0;32m✅ log_error creates log file and writes error message[0m
+[0;32m✅ log_error includes context information[0m
+
+[0;35mTest 2: retry_with_backoff Function[0m
+[0;32m✅ retry_with_backoff succeeds with successful command[0m
+Attempt 1 failed, retrying in 1s...
+[0;32m✅ retry_with_backoff fails appropriately after max attempts[0m
+
+[0;35mTest 3: move_extracted_content Function[0m
+[0;32m✅ move_extracted_content executes successfully[0m
+[0;32m✅ move_extracted_content moves files correctly[0m
+
+[0;35mTest 4: cleanup_and_exit Function[0m
+Cleaning up temporary files...
+[0;32m✅ cleanup_and_exit returns correct exit code[0m
+[0;32m✅ cleanup_and_exit removes temporary files[0m
+
+[0;35mTest 5: command_exists Function (Mocked)[0m
+[0;32m✅ command_exists returns true for existing command[0m
+[0;32m✅ command_exists returns false for missing command[0m
+
+[0;35m═══════════════════════════════════════════════════════════════[0m
+[0;34mTest Summary:[0m
+  Total tests: 10
+  Passed: [0;32m10[0m
+  Failed: [0;31m0[0m
+  Success rate: 100%
+
+[0;32m✅ 🎉 All unit tests passed![0m
+[2025-09-06 16:28:08] [PASS] Unit Tests: All tests passed
+[2025-09-06 16:28:08] [INFO] Starting suite: Running Integration Tests: Testing complete installation flows
+[0;35m
+╔═══════════════════════════════════════════════════════════════╗
+║                                                               ║
+║          AnarQ&Q Installer Integration Tests v1.0            ║
+║                                                               ║
+║            Testing Complete Installation Flows               ║
+║                                                               ║
+╚═══════════════════════════════════════════════════════════════╝
+[0m
+[0;34mℹ️  Test log: /home/baituman/AnarQmVP/anar-q-nexus-core-main/tests/installer/logs/integration-tests-20250906-162808.log[0m
+[0;34mℹ️  Test directory: /home/baituman/AnarQmVP/anar-q-nexus-core-main/tests/installer/temp/integration-20250906-162808[0m
+
+[0;35mTest 1: Complete Installation Flow (Dry Run)[0m
+[0;32m✅ Installer script has valid syntax[0m
+[0;32m✅ All required functions are present in installer[0m
+
+[0;35mTest 2: Dependency Manager Integration[0m
+[0;32m✅ Dependency manager script exists[0m
+[0;32m✅ Dependency manager has valid syntax[0m
+[0;32m✅ Installer properly sources dependency manager[0m
+
+[0;35mTest 3: Error Handling Integration[0m
+[0;32m✅ Error handling functions are integrated[0m
+[0;32m✅ Error trapping is configured[0m
+[0;32m✅ Exit on error is enabled[0m
+
+[0;35mTest 4: Download Engine Integration[0m
+[0;32m✅ Multiple download methods are implemented (3/3)[0m
+[0;32m✅ Retry mechanism is integrated[0m
+[0;31m❌ Multiple extraction methods are not available[0m
+
+[0;35mTest 5: Configuration and Environment Setup[0m
+[0;32m✅ Environment setup function exists[0m
+[0;32m✅ Environment file handling is implemented[0m
+[0;32m✅ Installation directory creation is implemented[0m
+
+[0;35mTest 6: User Interface and Progress Feedback[0m
+[0;32m✅ User interface functions are implemented (5/5)[0m
+[0;32m✅ User prompts are implemented[0m
+[0;32m✅ Header display is implemented[0m
+
+[0;35mTest 7: Validation and Post-Installation[0m
+[0;32m✅ Dependency installation is implemented[0m
+[0;32m✅ NPM dependency installation is implemented[0m
+[0;32m✅ Success message is implemented[0m
+
+[0;35m═══════════════════════════════════════════════════════════════[0m
+[0;34mIntegration Test Summary:[0m
+  Total tests: 20
+  Passed: [0;32m19[0m
+  Failed: [0;31m1[0m
+  Success rate: 95%
+
+[0;31m❌ ❌ Some integration tests failed. Check the log for details.[0m
+[2025-09-06 16:28:09] [FAIL] Integration Tests: Some tests failed (exit code: 1)

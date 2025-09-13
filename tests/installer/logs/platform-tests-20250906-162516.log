@@ -1,0 +1,38 @@
+[2025-09-06 16:25:16] [INFO] [linux] Test log: /home/baituman/AnarQmVP/anar-q-nexus-core-main/tests/installer/logs/platform-tests-20250906-162516.log
+[2025-09-06 16:25:16] [INFO] [linux] Test directory: /home/baituman/AnarQmVP/anar-q-nexus-core-main/tests/installer/temp/platform-20250906-162516
+[2025-09-06 16:25:16] [INFO] [linux] Current platform: linux
+[2025-09-06 16:25:16] [INFO] [linux] Starting test: Test 1: Platform Detection
+[2025-09-06 16:25:16] [INFO] [linux] Detected platform: linux
+[2025-09-06 16:25:16] [INFO] [linux] OSTYPE: linux-gnu
+[2025-09-06 16:25:16] [INFO] [linux] WSL_DISTRO_NAME: not set
+[2025-09-06 16:25:16] [PASS] [linux] Platform detection successful: linux
+[2025-09-06 16:25:16] [INFO] [linux] Starting test: Test 2: Package Manager Detection
+[2025-09-06 16:25:16] [PASS] [linux] Package managers detected: apt
+[2025-09-06 16:25:16] [PASS] [linux] Expected Linux package manager found
+[2025-09-06 16:25:16] [INFO] [linux] Starting test: Test 3: Essential Command Availability
+[2025-09-06 16:25:16] [INFO] [linux] Available commands: curl wget git unzip tar grep sed awk
+[2025-09-06 16:25:16] [PASS] [linux] Download tools (curl/wget) are available
+[2025-09-06 16:25:16] [PASS] [linux] Git is available
+[2025-09-06 16:25:16] [INFO] [linux] Starting test: Test 4: Node.js and NPM Availability
+[2025-09-06 16:25:16] [PASS] [linux] Node.js is available: v20.19.4
+[2025-09-06 16:25:16] [PASS] [linux] Node.js version is sufficient (>= 16)
+[2025-09-06 16:25:19] [PASS] [linux] NPM is available: 10.8.2
+[2025-09-06 16:25:19] [INFO] [linux] Starting test: Test 5: File System Operations
+[2025-09-06 16:25:19] [PASS] [linux] Directory creation works
+[2025-09-06 16:25:19] [PASS] [linux] File creation works
+[2025-09-06 16:25:19] [PASS] [linux] File permission modification works
+[2025-09-06 16:25:19] [PASS] [linux] Hidden file creation works
+[2025-09-06 16:25:19] [INFO] [linux] Starting test: Test 6: Network Connectivity
+[2025-09-06 16:25:20] [PASS] [linux] Network connectivity to GitHub works
+[2025-09-06 16:25:21] [PASS] [linux] HTTPS connectivity works
+[2025-09-06 16:25:21] [INFO] [linux] Starting test: Test 7: Shell Compatibility
+[2025-09-06 16:25:21] [INFO] [linux] Current shell: /bin/bash
+[2025-09-06 16:25:21] [INFO] [linux] Bash version: 5.2.21(1)-release
+[2025-09-06 16:25:21] [PASS] [linux] Running in Bash shell
+[2025-09-06 16:25:21] [PASS] [linux] Bash version is sufficient (>= 4.0)
+[2025-09-06 16:25:21] [PASS] [linux] Shell array support works
+[2025-09-06 16:25:21] [INFO] [linux] Starting test: Test 8: Platform-Specific Features
+[2025-09-06 16:25:21] [INFO] [linux] Testing Linux-specific features
+[2025-09-06 16:25:21] [PASS] [linux] Linux /proc filesystem is available
+[2025-09-06 16:25:21] [PASS] [linux] systemd is available
+[2025-09-06 16:25:21] [PASS] [linux] 🎉 All platform tests passed on linux!

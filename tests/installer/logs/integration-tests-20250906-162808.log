@@ -1,0 +1,30 @@
+[2025-09-06 16:28:08] [INFO] Test log: /home/baituman/AnarQmVP/anar-q-nexus-core-main/tests/installer/logs/integration-tests-20250906-162808.log
+[2025-09-06 16:28:08] [INFO] Test directory: /home/baituman/AnarQmVP/anar-q-nexus-core-main/tests/installer/temp/integration-20250906-162808
+[2025-09-06 16:28:08] [INFO] Starting test: Test 1: Complete Installation Flow (Dry Run)
+[2025-09-06 16:28:08] [PASS] Installer script has valid syntax
+[2025-09-06 16:28:08] [PASS] All required functions are present in installer
+[2025-09-06 16:28:08] [INFO] Starting test: Test 2: Dependency Manager Integration
+[2025-09-06 16:28:08] [PASS] Dependency manager script exists
+[2025-09-06 16:28:08] [PASS] Dependency manager has valid syntax
+[2025-09-06 16:28:08] [PASS] Installer properly sources dependency manager
+[2025-09-06 16:28:08] [INFO] Starting test: Test 3: Error Handling Integration
+[2025-09-06 16:28:08] [PASS] Error handling functions are integrated
+[2025-09-06 16:28:08] [PASS] Error trapping is configured
+[2025-09-06 16:28:08] [PASS] Exit on error is enabled
+[2025-09-06 16:28:08] [INFO] Starting test: Test 4: Download Engine Integration
+[2025-09-06 16:28:08] [PASS] Multiple download methods are implemented (3/3)
+[2025-09-06 16:28:08] [PASS] Retry mechanism is integrated
+[2025-09-06 16:28:08] [FAIL] Multiple extraction methods are not available
+[2025-09-06 16:28:08] [INFO] Starting test: Test 5: Configuration and Environment Setup
+[2025-09-06 16:28:08] [PASS] Environment setup function exists
+[2025-09-06 16:28:08] [PASS] Environment file handling is implemented
+[2025-09-06 16:28:08] [PASS] Installation directory creation is implemented
+[2025-09-06 16:28:08] [INFO] Starting test: Test 6: User Interface and Progress Feedback
+[2025-09-06 16:28:08] [PASS] User interface functions are implemented (5/5)
+[2025-09-06 16:28:08] [PASS] User prompts are implemented
+[2025-09-06 16:28:08] [PASS] Header display is implemented
+[2025-09-06 16:28:08] [INFO] Starting test: Test 7: Validation and Post-Installation
+[2025-09-06 16:28:08] [PASS] Dependency installation is implemented
+[2025-09-06 16:28:08] [PASS] NPM dependency installation is implemented
+[2025-09-06 16:28:09] [PASS] Success message is implemented
+[2025-09-06 16:28:09] [FAIL] ❌ Some integration tests failed. Check the log for details.
